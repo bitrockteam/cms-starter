@@ -7,8 +7,8 @@ export default defineConfig({
   name: 'default',
   title: 'cms-starter',
 
-  projectId: 'jk985lc8',
-  dataset: 'production',
+  projectId: process.env.SANITY_STUDIO_PROJECT_ID as string,
+  dataset: process.env.SANITY_STUDIO_PROJECT_DATASET as string,
 
   plugins: [structureTool(), visionTool()],
 
