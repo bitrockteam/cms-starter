@@ -10,15 +10,7 @@ async function getPosts() {
     } 
   }`;
 
-  const posts = await client.fetch(
-    query,
-    {},
-    {
-      next: {
-        revalidate: 1,
-      },
-    }
-  );
+  const posts = await client.fetch(query);
 
   return posts;
 }
