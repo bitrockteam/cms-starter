@@ -1,81 +1,61 @@
-# Turborepo starter
+# CMS Starter 🚀
 
-This is an official starter Turborepo.
+Welcome to CMS Starter! This boilerplate project powered by Next.js and Sanity CMS, integrated with TurboRepo for efficient development of static sites and blogs, provides you with everything you need to kickstart your project.
 
-## Using this example
+## Project Structure 📂
+This project is managed as a monorepo using TurboRepo, allowing for streamlined development across multiple applications.
 
-Run the following command:
+## Package Manager 📦
+
+The project utilizes pnpm as the package manager for managing dependencies.
+
+## What's Included? 📦
+
+### Applications 🖥️
+
+- `web`: A Next.js application for the actual web content
+- `cms`: A Sanity CMS application for content management
+
+Each application is developed using TypeScript.
+
+### Shared Configurations 🛠️
+
+Two shared configuration packages are included:
+
+- `@repo/eslint-config`: ESLint configurations shared among all apps.
+- `@repo/typescript-config`: TypeScript configurations used throughout the monorepo.
+
+These configurations ensure consistency and quality across all applications.
+
+### Additional Features ✨
+
+Within the project, you'll find:
+
+- **Tailwind CSS**: Integrated for easy styling and customization.
+- **Base Template**: Includes a home page, a page displaying all posts, and single post pages that fetch data directly from the Sanity Studio CMS project.
+
+## Getting Started 🚀
+
+After cloning the repository, navigate to the root directory of your project and run the following commands:
 
 ```sh
-npx create-turbo@latest
+pnpm install # Install dependencies
+pnpm dev # Start the development server
 ```
 
-## What's inside?
+This will install all required dependencies and start the development server for both the web and cms applications.
 
-This Turborepo includes the following packages/apps:
+## Configuration
 
-### Apps and Packages
+To configure the applications, you need to create a .env file based on .env.example and fill in the following fields:
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
-
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
-
-### Utilities
-
-This Turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-
-### Build
-
-To build all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm build
+```sh
+SANITY_STUDIO_PROJECT_ID=
+SANITY_STUDIO_PROJECT_DATASET=
 ```
 
-### Develop
+These fields should be populated with the data provided during the creation of a new project with Sanity in the remote environment.
 
-To develop all apps and packages, run the following command:
+## Start Building! 🛠️
+Now that you're all set up, start building amazing static sites and blogs with ease using CMS Starter! Happy coding! 🎉
 
-```
-cd my-turborepo
-pnpm dev
-```
-
-### Remote Caching
-
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
-
-```
-cd my-turborepo
-npx turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
-
-```
-npx turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
