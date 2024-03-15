@@ -1,5 +1,7 @@
 # CMS Starter 🚀
 
+<img width="1918" alt="Schermata 2024-03-15 alle 12 02 07" src="https://github.com/bitrockteam/cms-starter/assets/24392867/5fbe753e-afec-4892-8229-1b94a3ba2245">
+
 Welcome to CMS Starter! This boilerplate project powered by Next.js and Sanity CMS, integrated with TurboRepo for efficient development of static sites and blogs, provides you with everything you need to kickstart your project.
 
 ## Project Structure 📂
@@ -52,6 +54,7 @@ To configure the applications, you need to create a .env file based on .env.exam
 ```sh
 SANITY_STUDIO_PROJECT_ID=
 SANITY_STUDIO_PROJECT_DATASET=
+SANITY_STUDIO_API_VERSION=
 ```
 
 These fields should be populated with the data provided during the creation of a new project with Sanity in the remote environment.
