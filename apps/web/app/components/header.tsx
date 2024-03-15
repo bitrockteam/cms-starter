@@ -11,18 +11,12 @@ export default function Header() {
     <header>
       <div className="flex justify-between border p-8">
         <Link className="font-bold" href="/">
-          Logo
+          CMS Starter
         </Link>
         <nav className="hidden md:block">
           <ul className="flex gap-8">
             <li>
               <Link href="/blog">Blog</Link>
-            </li>
-            <li>
-              <Link href="/about">About</Link>
-            </li>
-            <li>
-              <Link href="/contact">Contact</Link>
             </li>
           </ul>
         </nav>
@@ -41,12 +35,6 @@ export default function Header() {
           <ul className="flex flex-col items-center gap-8">
             <li>
               <Link href="/blog">Blog</Link>
-            </li>
-            <li>
-              <Link href="/about">About</Link>
-            </li>
-            <li>
-              <Link href="/contact">Contact</Link>
             </li>
           </ul>
         </div>
