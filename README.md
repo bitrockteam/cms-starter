@@ -54,6 +54,7 @@ To configure the applications, you need to create a .env file based on .env.exam
 ```sh
 SANITY_STUDIO_PROJECT_ID=
 SANITY_STUDIO_PROJECT_DATASET=
+SANITY_STUDIO_API_VERSION=
 ```
 
 These fields should be populated with the data provided during the creation of a new project with Sanity in the remote environment.
